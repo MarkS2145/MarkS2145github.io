@@ -10,9 +10,11 @@ body {
 
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* font-size: large; */
+    font-size: large;
 
     border: 5px solid grey;
+
+    background-color: midnightblue;
 
 }
 
@@ -101,18 +103,28 @@ p {
 
 
 footer {
-    color: lightgrey;
-
+    Display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
     text-align: center; 
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#p-footer {
+    padding: 1rem 1rem;
+    margin: 0px;
 }
 
 #social {
-    color:lightgreen;
     font-weight: bold;
-    
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
-@Media (max-width: 550px) {
+@Media (max-width: 650px) {
     .toggle-button {
         display: flex;
     }
