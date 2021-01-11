@@ -7,29 +7,26 @@ body {
     
     margin: 0;
     padding: 0;
-
-    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
 
     border: 5px solid grey;
-
-    background-color: midnightblue;
+    background-color: #333;
 
 }
 
 
 .container { 
     display: grid; 
-
-    /* column-gap: 10px;
-    row-gap:10px; */
-    /* justify-items: center; */
-
+    
 
     max-width: 90%;
-    margin: 50px 50px;
-    border: 3px solid lightcoral;
+    padding: 1em 1em;
+    margin: 0em 3em 0.5em 3em;
+    border: 3px solid lightgrey;
+
+    background-color: #333;
+    color: lightgray;
 }
 
 .navbar {
@@ -42,18 +39,26 @@ body {
 }
 
 .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 2.5rem;
+    margin: .5rem 0em 0.5em 2em;
+    padding: 0em;
+}
+
+.navbar-links {
+    margin: 0.75em 5em 0.95em 0em;
+
 }
 
 .navbar-links ul {
     margin: 0px;
     padding: 0px;
     display: flex;
+
 }
 
 .navbar-links li {
     list-style: none;
+    
 }
 
 .navbar-links li a {
@@ -87,46 +92,64 @@ body {
     width: 100%;
     border-radius: 10px;
     background-color: whitesmoke;
+    
 
 }
 
+h2, h3 {
+    display: flex;
+    justify-content: center;
+}
 
-
+#main {
+    display: flex;
+    justify-content: center;
+    margin: 100px
+}
 
 img {
-    float: right;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 100%;
+    height: auto;
+
+    padding: 0.25em 0.25em;
+    border-image-width: 0.3em;
+    border-radius: 5px;
+    border-style: inset;
 }
 
 p {
-    font-size: 20px;    
+    font-size: 20px;   
+    margin: 0px 30px 0 px 30px;s 
 }
 
 
 footer {
     Display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: whitesmoke;
     text-align: center; 
     padding: 0px;
     margin: 0px;
+    
+    
 
 }
 
 #p-footer {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin: 0px;
+    font-size: 0.75em;
 }
 
-#social {
-    font-weight: bold;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-@Media (max-width: 650px) {
+@Media screen and ( max-width: 775px) {
     .toggle-button {
         display: flex;
+        margin: 0.75em 3em 0.95em 0em;
     }
     .navbar-links {
         display: none;
@@ -136,6 +159,8 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        
+
     }
     .navbar-links ul {
         width: 100%;
@@ -144,9 +169,12 @@ footer {
     }
     .navbar-links li {
         text-align: center;
+        
     }
     .navbar-links li a {
         padding: 0.35rem 1rem;
+        font-size: 1.75em;
+        
     }
     .navbar-links.active {
         display: flex;
