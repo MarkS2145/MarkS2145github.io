@@ -38,17 +38,170 @@
 
       <img src="./lib/images/MarkS.jpg" alt="This is Mark Stuebs" />
 
-      <p>This page is to help me develop my coding skills as well as enage with others in the coding world.</p>
 
-      <p>I enjoy many activities and have varied interests.  Solving problems and working to help others, with theirs, resonates with me.  I enjoy coding alot and often find I loose track of time as I am fully engrossed in my work and the results I acheive.  The days fly by and I like that feeling, a lot.</p>
+      Tree command returns:
+      WDXMS80723VCG:sei Mark$ tree
+      .
+      ├── hello.txt
+      ├── homework
+      ├── labs
+      ├── lessons
+      │   ├── cli_intro.md
+      │   ├── css.md
+      │   ├── git_intro.md
+      │   └── html.md
+      ├── projects
+      └── sandbox
       
+      5 directories, 5 files
+      
+      Working With Git:  https://git.generalassemb.ly/john-deere-sei-7/git-intro
+      
+      
+      Last login: Tue Dec 15 08:47:29 on ttys001
+      
+      The default interactive shell is now zsh.
+      To update your account to use zsh, please run `chsh -s /bin/zsh`.
+      For more details, please visit https://support.apple.com/kb/HT208050.
+      WDXMS80723VCG:~ Mark$ ls
+      Applications	Downloads	Music		coding
+      Desktop		Library		Pictures	sei
+      Documents	Movies		Public
+      WDXMS80723VCG:~ Mark$ cd coding/my_first_repository/
+      WDXMS80723VCG:my_first_repository Mark$ ls
+      hello.txt
+      WDXMS80723VCG:my_first_repository Mark$ git status
+      On branch master
+      Changes not staged for commit:
+        (use "git add <file>..." to update what will be committed)
+        (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+      
+      no changes added to commit (use "git add" and/or "git commit -a")
+      WDXMS80723VCG:my_first_repository Mark$ git add .
+      WDXMS80723VCG:my_first_repository Mark$ git status
+      On branch master
+      Changes to be committed:
+        (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt
+      
+      WDXMS80723VCG:my_first_repository Mark$ git commit -m "My first commit"
+      [master fb30930] My first commit
+       1 file changed, 8 insertions(+)
+      WDXMS80723VCG:my_first_repository Mark$ git status
+      On branch master
+      nothing to commit, working tree clean
+      WDXMS80723VCG:my_first_repository Mark$
+      
+      
+      
+      Create a working folder
+      Git init
+      Ls -a //View all files including hidden files/folders.  .git should be in the list
+      Make code changes
+      Git add .  // add changes to a commit list
+      Git commit -m "My new changes" //
+      
+      
+      To get out of a commit when asking for a message use the following command line entry..
+      [ESC] :wkq
+      
+      Trash .git will remove a repository from a folder
+      
+      
+      Git remote add origin <url> //Create a new Git repository on Github.com to sync your files to/from
+      
+      Git push -u origin master //pushes files web github
+      
+      
+      To trash a GitHub repo go to settings, the scroll all the way to the end.  The dialog box is in red.  Enter the repo name and confirm.
+      
+      
+      
+      
+      Then scroll down to the danger zone
+      
+      
+      
+      Git Workflow:  https://git.generalassemb.ly/john-deere-sei-7/git-workflow
+        - Cloning is a local operation (Command Line)
+        - Forking & pulling is an operation on the github server (Browser)
+      
+      Need to slack each other our repo: https://github.com/MarkStuebs/my_first_repo
+      My Name: MarkStuebs
+      
+      Click settings then collaborators menu
+        - Enter password
+      
+      Then add the Collaborator user name, click Add Collaborators
+      
+      
+      On Git Hub you can fork a repository by clicking the fork on the right hand side of the top menu
+      
+      Git Hub Fork push pull clone example
+      
+      Copy URL from your github fork
+      
+      From terminal, navigate to the parent folder where you want the clone to appear inside of.
+      
+      From the command line, type:
+      Git clone https://github.com/MarkStuebs/my-first-repository
+      
+      https://github.com/MarkStuebs/my-first-repository.git
+      
+      Then can ls to check that we have the folder and inside of the folder, using cd <folderName>
+      We can see the files.
+      
+      Git remote -v  // will check if the origin is correct:
+        WDXMS80723VCG:my-first-repository Mark$ git remote -v
+        origin	https://github.com/MarkStuebs/my-first-repository (fetch)
+        origin	https://github.com/MarkStuebs/my-first-repository (push)
+      
+      
+      <make some changes>
+      
+      To push your changes up to my Github we simply do a git push
+      
+      Git push -u origin master
+      
+      WDXMS80723VCG:my-first-repository Mark$ git push
+      Everything up-to-date
+      WDXMS80723VCG:my-first-repository Mark$
+      
+      
+      
+      Objects - how to output functions() in a for: 
+      
+      For (key in myObject) {
+      
+        Console.log(myObject);
+      }
+      
+      
+          WAR
+          
+          
+          
+      
+      
+      
+      // As you win, you get more cards. Score returns the length of your hand
+      getMyScore() {
+      // length of my Array of cards
+      this.myHand = this.myHand.filter(function ( element ) {
+      return element !== undefined ;
+      } );
+      return this.myHand.length
+      }
+      
+      <p>This page is to help me develop my coding skills as well as engage with others in the coding world.</p>
+      <p>I enjoy many activities and have varied interests. Solving problems and working to help others, with theirs, resonates with me. With coding I often find that I loose track of time as I am fully engrossed in my work and the results I achieve. The days fly by and I like that feeling, a lot.</p>
       <h3>Coding Experience</h3>
       <ul>
-        <li><h4>JavaScript, HTML and CSS</h4>Currently enrolled in a General Assmebly training course and having lots of fun learning</li>
-        <li><h4>C#</h4>2 year course at UCLA</li>
-        <li><h4>C</h4>Experience in embedded C for Microchip controllers.  Experience with C running from a batch file on a PC to perform large scale data regression including data message parsing, processing for statistics, output formatting for presentation layer and summary reports</li>
-        <li><h4>Visual basic</h4>Experience programming stand alone desktop apps to improve consistency of data processing and Excel macros</li>
-        
+      <li><h4>JavaScript, HTML and CSS</h4>Currently enrolled in a General Assembly training course and having lots of fun learning</li>
+      <li><h4>C#</h4>2 year course at UCLA</li>
+      <li><h4>C</h4>Experience in embedded C for Microchip controllers. Experience with C running from a batch file on a PC to perform large scale data regression including data message parsing, processing for statistics, output formatting for presentation layer and summary reports</li>
+      <li><h4>Visual basic</h4>Experience programming stand alone desktop apps to improve consistency of data processing and Excel macros</li>
         
 
       </ul>
