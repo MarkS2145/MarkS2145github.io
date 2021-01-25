@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin:0px;
+}
+
+body {
+    /* border: 3px solid fuchsia;  */
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+button {
+    display: inline-block;
+    background-color: greenyellow;
+    margin: 1em;
+    margin-left: 38%;
+    min-height: 30px;
+    font-size: 1.25em;
+    font-weight: bolder;
+    
+}
+
+h3 {
+    display: inline;
+    justify-items: center;
+    font-size: 1.25em;
+    width: 100%;
+    height: 50%;
+    border: 2px solid lightgray;
+    padding: 1px;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.cells {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 7vw 7vw 7vw 7vw 7vw;
+    grid-template-rows: 7vw 7vw 7vw 7vw 7vw;
+}
+
+
+.cell {
+    width: 100%;
+    height: 100%;
+    border: .2vw solid goldenrod;
+    background-color: honeydew;
+} 
+
+.snake {
+    background-color: green; /* Snakes are green today! */
+} 
+
+.food {
+    background-color:indianred /* food is  today! */
+} 
